@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: tahoma;
+    width: 100%;
+    background: linear-gradient(to right, rgb(233, 233, 233), rgb(4 125 165 / 24%));
+}
+
+.heading {
+    font-size: 40px;
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .heading {
+        font-size: 40px;
+    }
+}
+
+.description {
+    font-size: 24px;
+}
+
+.skills-conent {
+    position: relative;
+    margin: 30px auto;
+    width: calc(200px + 45vw);
+    background-color: #f9f8f8;
+    padding: 30px;
+    transition: .4s;
+    border: 2px solid transparent;
+}
+
+.skills-conent div:nth-child(1) {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-conent:hover {
+    background-color: rgb(233, 233, 233);
+    border: 2px solid #FFF;
+}
+
+.skills-conent div:nth-child(2) {
+    width: 90%;
+    height: 30px;
+    margin: 20px auto 0px;
+    background-color: rgb(233, 233, 233);
+    transition: .4s;
+    position: relative;
+}
+
+.skills-conent:hover div:nth-child(2) {
+    background-color: white;
+}
+
+.skills-conent span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: rgb(6, 152, 135);
+}
+
+.present {
+    margin-top: 12px;
+    font-weight: bold;
+    font-family: unset;
+    font-size: 20px;
+}
+
+.present i {
+
+    color: rgb(6, 152, 135);
+
+}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="heading"> {{ heading }} </div>
+<div class="description"> {{description}} </div>
+{% for skill in skills %}
+<div class="skills-conent">
+    <div>{{ skill[0] }}</div>
+    <div>
+        <span data-goal="{{ skill[1] }}"></span>
+    </div>
+    <div class="present">{{ skill[1] }} <i class="fa-solid fa-percent"></i></div>
+
+</div>
+{% endfor %}
+{% endblock %}
